@@ -1,9 +1,9 @@
 LLVM_CONFIG=llvm-config
- 
+
 CXX=clang
 CXXFLAGS=`$(LLVM_CONFIG) --cppflags` -fPIC -fno-rtti
 LDFLAGS=`$(LLVM_CONFIG) --ldflags`
-  
+
 all: mypass.so
 	 
 mypass.so: mypass.o
