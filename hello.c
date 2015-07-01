@@ -1,14 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void inner (void) {
+void inner (void)
+{
     puts("inner()");
 }
 
 
-void myfun (void) {
+void myfun (void)
+{
     puts("enter myfunc()");
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 10; i++)
+    {
         printf("QQ XD Orz %d\n", i);
         inner();
     }
@@ -16,7 +19,8 @@ void myfun (void) {
 }
 
 
-int main (void) {
+int main (void)
+{
     puts("in main");
     myfun();
     puts("after myfunc()");
